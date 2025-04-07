@@ -1,10 +1,156 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Понзель Тетяна">
-        <title>Головна - Музика</title>
-    </head>
-    <body>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Понзель Тетяна">
+    <title>Головна - Музика</title>
+    <style>
+        body {
+            background-color: #d9d8c0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1,
+        h2,
+        p {
+            text-align: center;
+        }
+
+        ul {
+            text-align: center;
+            list-style-position: inside;
+        }
+
+        a {
+            color: green;
+            width: fit-content;
+            display: flex;
+            margin-inline: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #bc7138;
+            color: white;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ласкаво просимо до світу музики!</h1>
+    <p>
+        <font size="4" color="darkred"><b>Музика</b> - це мистецтво звуків</font>
+    </p>
+    <p style="max-width: 700px; margin: 20px auto; text-align: center;">
+        Неможливо визначити напевно час, коли з’явилася музика, але дослідники та філософи вважають, що це відбулося
+        водночас з появою людини, як такої. Деякі йдуть далі та стверджують, що людина також є й першим музичним
+        інструментом, бо має «ударні» у вигляді рук та ніг і та «духові» у якості яких виступає голос. Але, якщо
+        називати приблизні дати, то вчені пропонують цифру у п’ятдесят тисяч років – це час, коли людство ще жило у
+        Африці та не встигло розселитися по інших континентах.
+        <br>
+        <i>Джерело:</i><br>
+        <a href="https://muzabetka.com.ua/istoriya-vynyknennya-muzyky-ta-pershyh-muzychnyh-instrumentiv.html"
+            target="_blank">
+            muzabetka.com.ua
+        </a>
+    </p>
+
+    <p>
+        <i>Перехід на інші сторінки:</i>
+        <a href="rock.html">Рок</a>
+        <a href="jazz.html">Джаз</a>
+        <a href="classical.html">Класична музика</a>
+    </p>
+    <p>
+        <i>Перехід до таблички з жанрами:</i>
+        <a href="#table-section">Табличка</a>
+    </p>
+
+
+    <a href="music.jpg" target="_blank">
+        <img src="music.jpg" width="700" height="400" style="display: block; margin: 0 auto;">
+    </a>
+
+    <table>
+        <caption style="margin-top: 50px; font-size: 24px; font-weight: bold; margin-bottom: 15px;" id="table-section">
+            Музичні жанри</caption>
+        <tr>
+            <th>Зображення</th>
+            <th>Посилання</th>
+            <th>Опис</th>
+        </tr>
+        <tr>
+            <td><img src="rock.jpg" width="230" height="150"></td>
+            <td><a href="rock.html">Рок</a></td>
+            <td>Енергійна музика</td>
+        </tr>
+        <tr>
+            <td><img src="jazz.jpg" width="230" height="150"></td>
+            <td><a href="jazz.html">Джаз</a></td>
+            <td>Імпровізація</td>
+        </tr>
+        <tr>
+            <td><img src="classical.jpg" width="230" height="150"></td>
+            <td><a href="classical.html">Класична музика</a></td>
+            <td>Музика століть</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <table cellspacing="10" cellpadding="8" border="1" style="width: 60%; margin: 0 auto;">
+        <caption style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">Музичні жанри та їхні характеристики
+        </caption>
+
+        <colgroup>
+            <col span="1" style="background-color: #f2f2f2;">
+            <col span="2" style="background-color: #e2e2e2;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2" style="text-align: center; background-color: rgb(228, 186, 87);">Жанр</th>
+                <th colspan="2" style="text-align: center; background-color: rgb(228, 186, 87);">Характеристики</th>
+            </tr>
+            <tr>
+                <th style="text-align: center; color: black; background-color: #a1d1d4;">Темп</th>
+                <th style="text-align: center; color: black; background-color:  #a1d1d4;">Інструменти</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td style="text-align: center;">Рок</td>
+                <td style="text-align: center;">Швидкий</td>
+                <td style="text-align: center;">Гітара, барабани</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">Джаз</td>
+                <td style="text-align: center;">Медитативний</td>
+                <td style="text-align: center;">Саксофон, труба</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">Класика</td>
+                <td style="text-align: center;">Різноманітний (повільний, швидкий)</td>
+                <td style="text-align: center;">Фортепіано, скрипка</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 style="margin-top: 50px; font-style: italic;">Фрейм</h2>
+    <iframe src="rock.html" width="600" height="400" frameborder="0" style="display: block; margin: 0 auto;"></iframe>
+
+</body>
+
 </html>
