@@ -1,0 +1,74 @@
+ul,
+ol,
+dl {
+    text-align: center;
+    list-style-position: inside;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+a {
+    width: fit-content;
+    display: flex;
+    margin-inline: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #bc7138;
+    color: white;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-page a {
+    color: orange;
+}
+
+.main-page {
+    background-color: #d9d8c0;
+    font-family: Arial, sans-serif;
+}
+
+.rock-page a {
+    color: lightblue;
+}
+
+.rock-page {
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.jazz-page a {
+    color: darkblue;
+}
+
+.jazz-page {
+    background-color: #456234b4;
+    color: black;
+    font-family: Georgia, serif;
+}
+
+.classical-page a {
+    color: darkred;
+}
+
+.classical-page {
+    background-color: #9b8686;
+    color: black;
+    font-family: "Times New Roman", serif;
+}
