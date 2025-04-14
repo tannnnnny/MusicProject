@@ -76,3 +76,16 @@ th {
     color: black;
     font-family: "Times New Roman", serif;
 }
+
+h2+ul {
+    color: orange;
+}
+
+.main-page caption {
+    font-style: italic;
+}
+
+dl>div {
+    background-color: #e6c6c6;
+    padding: 5px;
+}
