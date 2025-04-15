@@ -89,3 +89,71 @@ dl>div {
     background-color: #e6c6c6;
     padding: 5px;
 }
+
+.highlight {
+    background-color: rgb(206, 224, 39);
+    font-style: italic;
+}
+
+.logo {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 32px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.genre-float-container {
+    width: 80%;
+    margin: 30px auto;
+    overflow: hidden;
+    border: 2px dashed orange;
+    padding: 10px;
+    background-color: #fff9ed;
+}
+
+.genre-float-img {
+    float: left;
+    margin-right: 20px;
+}
+
+.genre-float-text {
+    overflow: hidden;
+}
+
+/* Псевдокласи для посилань */
+a:link {
+    text-decoration: none;
+    color: green;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: darkorange;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+/* Псевдоклас :first-child */
+ul li:first-child {
+    font-weight: bold;
+    color: rgb(13, 10, 151);
+}
+
+/* Псевдоелементи */
+h1::before {
+    content: "🎵 ";
+}
+
+h1::after {
+    content: " 🎶";
+}
