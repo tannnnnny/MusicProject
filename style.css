@@ -157,3 +157,54 @@ h1::before {
 h1::after {
     content: " 🎶";
 }
+
+#startDialogButton,
+#showInfoButton,
+#compareStringsButton,
+#changeBackgroundBtn,
+#redirectBtn {
+    position: absolute;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #767247;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#startDialogButton {
+    top: 50px;
+    left: 120px;
+}
+
+#showInfoButton {
+    top: 120px;
+    left: 65px;
+}
+
+#compareStringsButton {
+    top: 190px;
+    left: 112px;
+}
+
+#changeBackgroundBtn {
+    top: 260px;
+    left: 70px;
+}
+
+#redirectBtn {
+    top: 330px;
+    left: 72px;
+}
+
+#startDialogButton:hover,
+#showInfoButton:hover,
+#compareStringsButton:hover,
+#changeBackgroundBtn:hover,
+#redirectBtn:hover {
+    background-color: #6b542b;
+    transform: scale(1.05);
+}

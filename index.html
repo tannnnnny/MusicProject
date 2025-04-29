@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <meta name="author" content="Понзель Тетяна">
     <title>Головна - Музика</title>
+    <script>
+        document.write("<p style='color:red;'>Це додано через document.write</p>");
+    </script>
 
     <style>
         a {
@@ -15,6 +18,20 @@
 </head>
 
 <body class="main-page">
+    <script>
+        alert("Вітаємо на нашій сторінці!");
+        let userName = prompt("Як вас звати?", "Ім'я");
+        let isAdult = confirm("Натисніть ОК, якщо вам більше 18 років");
+        console.log("Ім'я користувача:", userName);
+        console.log("Користувач повнолітній:", isAdult);
+    </script>
+
+    <button id="startDialogButton">Почати діалог</button>
+    <button id="showInfoButton">Інформація про розробника</button>
+    <button id="compareStringsButton">Порівняти рядки</button>
+    <button id="changeBackgroundBtn">Змінити фон на 30 секунд</button>
+    <button id="redirectBtn">Перейти на іншу сторінку</button>
+
     <div class="header">
         <h1 id="heading">Ласкаво просимо до світу музики!</h1>
         <div class="logo">🎵</div>
@@ -148,6 +165,8 @@
 
     <h2 style="margin-top: 50px; font-style: italic;">Фрейм</h2>
     <iframe src="rock.html" width="600" height="400" frameborder="0" style="display: block; margin: 0 auto;"></iframe>
+
+    <script src="index.js"></script>
 
 </body>
 
