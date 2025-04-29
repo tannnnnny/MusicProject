@@ -74,52 +74,51 @@ images.forEach(function (image) {
     });
 });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     const heading = document.getElementById("heading");
-//     console.log("innerHTML:", heading.innerHTML);
-//     heading.innerHTML = "<span style='color: blue;'>Вітаємо в музичному світі!</span>";
+document.addEventListener("DOMContentLoaded", () => {
+    const heading = document.getElementById("heading");
+    console.log("innerHTML:", heading.innerHTML);
+    heading.innerHTML = "<span style='color: orange;'>Вітаємо в музичному світі!</span>";
 
-//     const logo = document.querySelector(".logo");
-//     console.log("outerHTML:", logo.outerHTML);
+    const logo = document.querySelector(".logo");
+    console.log("outerHTML:", logo.outerHTML);
 
-//     const description = document.querySelector(".intro-text p");
-//     console.log("textContent:", description.textContent);
-//     description.textContent = "🎼 Оновлений текст без HTML-тегів 🎼";
+    const description = document.querySelector(".intro-text p");
+    console.log("textContent:", description.textContent);
+    description.textContent = "🎼 Оновлений текст без HTML-тегів 🎼";
 
-//     const tableCaption = document.querySelector("caption");
-//     const textNode = tableCaption.firstChild;
-//     console.log("nodeValue:", textNode.nodeValue);
-//     textNode.nodeValue = "🎵 Жанри музики (оновлено через nodeValue)";
+    const tableCaption = document.querySelector("caption");
+    const textNode = tableCaption.firstChild;
+    console.log("nodeValue:", textNode.nodeValue);
+    textNode.nodeValue = "🎵 Жанри музики (оновлено через nodeValue)";
 
-// });
+});
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     //document.write("<p style='color:red;'>Це додано через document.write</p>");
+document.addEventListener("DOMContentLoaded", () => {
+    //document.write("<p style='color:red;'>Це додано через document.write</p>");
 
-//     const newParagraph = document.createElement("p");
-//     const paragraphText = document.createTextNode("Цей абзац створено за допомогою createElement та createTextNode.");
-//     newParagraph.appendChild(paragraphText);
+    const newParagraph = document.createElement("p");
+    const paragraphText = document.createTextNode("Цей абзац створено за допомогою createElement та createTextNode.");
+    newParagraph.appendChild(paragraphText);
+    const intro = document.querySelector(".intro-text");
+    intro.append(newParagraph);
 
-//     const intro = document.querySelector(".intro-text");
-//     intro.append(newParagraph);
+    const firstNote = document.createElement("p");
+    firstNote.textContent = "Це вставлено на початку блоку intro-text за допомогою prepend.";
+    intro.prepend(firstNote);
 
-//     const firstNote = document.createElement("p");
-//     firstNote.textContent = "Це вставлено на початку блоку intro-text за допомогою prepend().";
-//     intro.prepend(firstNote);
+    const afterHeading = document.createElement("p");
+    afterHeading.textContent = "Це вставлено після заголовка за допомогою after";
+    const heading = document.getElementById("heading");
+    heading.after(afterHeading);
 
-//     const afterHeading = document.createElement("p");
-//     afterHeading.textContent = "Це вставлено після заголовка!";
-//     const heading = document.getElementById("heading");
-//     heading.after(afterHeading);
+    const logo = document.querySelector(".logo");
+    const newLogo = document.createElement("p");
+    newLogo.textContent = "🎤 Новий логотип, створений за допомогою replaceWith";
+    newLogo.style.color = "darkblue";
+    logo.replaceWith(newLogo);
 
-//     const logo = document.querySelector(".logo");
-//     const newLogo = document.createElement("p");
-//     newLogo.textContent = "🎤 Новий логотип!";
-//     newLogo.style.color = "darkblue";
-//     logo.replaceWith(newLogo);
-
-//     const lastImage = document.querySelectorAll("img")[3];
-//     if (lastImage) {
-//         lastImage.remove();
-//     }
-// });
+    const lastImage = document.querySelectorAll("img")[3];
+    if (lastImage) {
+        lastImage.remove();
+    }
+});
