@@ -20,12 +20,52 @@
     <br><br>
 
     <img src="jazz.jpg" width="650" height="450" style="display: block; margin: 0 auto;">
+
+    <h2>Меню</h2>
+    <div id="menu">
+        <button data-action="action1">Інформація про інструменти</button>
+        <button data-action="action2">Історія джазу</button>
+        <button data-action="action3">Відомі музиканти</button>
+    </div>
+
     <h2>Інструменти у джазі:</h2>
-    <ol type="I">
+    <ol id="instrumentList" type="I">
         <li>Саксофон</li>
         <li>Труба</li>
         <li>Контрабас</li>
     </ol>
+
+    <script>
+        const menu = document.getElementById('menu');
+
+        menu.addEventListener('click', function (event) {
+            if (event.target.tagName === 'BUTTON') {
+                const action = event.target.getAttribute('data-action');
+                switch (action) {
+                    case 'action1':
+                        alert('Джазові інструменти мають свою унікальність, кожен з них вносить свій вклад в звучання джазу. Саксофон — інструмент, який вважається основним у джазовій музиці завдяки своїй гнучкості і можливості виражати різноманітні емоції. Труба відома своєю здатністю виконувати складні мелодії та інтенсивні імпровізації. Контрабас є важливою частиною ритм-секції, створюючи глибокі звуки, які підтримують інші інструменти.');
+                        break;
+                    case 'action2':
+                        alert('Джаз виник у США на початку 20 століття. Він поєднав африканські ритми та європейські музичні традиції, що стало основою для створення нового стилю музики. Джаз став важливою частиною культурної ідентичності США, а потім поширився по всьому світу, ставши впливовим у всіх куточках музичного мистецтва.');
+                        break;
+                    case 'action3':
+                        alert('Відомі музиканти джазу: Луї Армстронг, Чарлі Паркер, Майлз Дейвіс, Джон Колтрейн. Луї Армстронг, відомий як "Сатана", був одним з найвідоміших трубачів в історії джазу. Його стиль змінив вигляд джазу та здобув міжнародне визнання. Чарлі Паркер, один з лідерів бібоп-руху, відомий своїм надзвичайним технічним рівнем виконання та новаторським підходом до імпровізації.');
+                        break;
+                }
+            }
+        });
+        const list = document.getElementById('instrumentList');
+
+        list.addEventListener('click', function (event) {
+            if (event.target.tagName === 'LI') {
+                const items = list.getElementsByTagName('li');
+                for (let item of items) {
+                    item.style.backgroundColor = '';
+                }
+                event.target.style.backgroundColor = 'lightblue';
+            }
+        });
+    </script>
 </body>
 
 </html>
