@@ -200,14 +200,14 @@ h1::after {
     left: 72px;
 }
 
-#startDialogButton:hover,
+/* #startDialogButton:hover,
 #showInfoButton:hover,
 #compareStringsButton:hover,
 #changeBackgroundBtn:hover,
 #redirectBtn:hover {
     background-color: #6b542b;
     transform: scale(1.05);
-}
+} */
 
 #menu {
     display: flex;
@@ -231,4 +231,10 @@ h1::after {
 #menu button:hover {
     background-color: #45a049;
     /* Змінюємо колір кнопки при наведенні */
+}
+
+.highlighted {
+    background-color: #6b542b !important;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
 }
